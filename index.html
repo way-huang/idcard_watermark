@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="./bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hidden {
+      display: none;
+    }
+    .center {
+      margin: 0 auto;
+    }
+    .page-header {
+      text-align: center;
+      background: #007bff;
+      color: white;
+      padding: .5rem 0;
+      margin-bottom: 1rem;
+    }
+    .form-group {
+      margin: 1rem auto;
+      width: 80%;
+    }
+    .info {
+      color: red;
+      text-align: center;
+      margin: 1rem auto;
+    }
+  </style>
+</head>
+<body>
+<header class="page-header">
+  <h1>身份证添加水印</h1>
+</header>
+<main>
+  <img src="./example.jpg" alt="" class="img-fluid d-block center" style="width: 85%;">
+  <div class="form-group">
+    <input type="text" class="form-control" id="watermark" placeholder="">
+  </div>
+  <button type="button" id="choose" class="btn btn-primary btn-block center" style="width: 80%;" > 选择图片 </button>
+
+  <div class="info">
+    <h3>长按图片进行保存</h3>
+  </div>
+
+  <input type="file" id="idcard" accept="image/*" class="hidden">
+  <canvas class="hidden"></canvas>
+
+</main>
+
+<script src="./index.js" type="module"></script>
+</body>
+</html>
